@@ -1,0 +1,61 @@
+:root {
+    --bg-color: #c3bfda;
+    --primary-color: #0f0f0f;
+    --text-color: #333;
+    --card-bg: #fff;
+    --card-border: #e5e7eb;
+    --hover-bg: #eef2ff;
+  }
+  
+  html, body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .listItem {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .listItem:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
+  }
+  
+  .message {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  
